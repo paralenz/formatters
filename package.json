@@ -1,0 +1,42 @@
+{
+  "name": "@paralenz/formatters",
+  "version": "0.0.1",
+  "description": "A collection of number formatters used by the paralenz development team",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Casten Daurehøj",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "lint": "eslint --ext .ts",
+    "build": "tsc --esModuleInterop -p tsconfig.build.json",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@paralenz/eslint-config-typescript-react": "^1.0.4",
+    "typescript": "^4.5.4",
+    "@types/jest": "^27.4.0",
+    "jest": "^27.4.5",
+    "ts-jest": "^27.1.2",
+    "ts-node": "^10.4.0"
+  },
+  "dependencies": {
+    "lodash.round": "^4.0.4"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "homepage": "https://github.com/paralenz/formatters",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paralenz/formatters.git"
+  },
+  "bugs": {
+    "url": "https://github.com/paralenz/formatters/issues"
+  },
+  "keywords": [
+    "paralenz",
+    "number",
+    "formatters"
+  ]
+}
