@@ -1,6 +1,6 @@
 import round from 'lodash.round'
 import { LBS_TO_KG_RATIO } from './constants'
-import { WeightUnit } from '..'
+import { WeightUnit } from '.'
 
 /**
  * Format the weight of a session
@@ -9,7 +9,9 @@ import { WeightUnit } from '..'
  * @param {WeightUnit} unit The unit that the pressure should be converted to. Default: kg
  * @param {boolean} includeUnit Should the unit be appended. Default: true
  */
-export const formattedWeight = (weight: number, unit: WeightUnit = 'kg', includeUnit = true): string => {
+export const formattedWeight = (weight: number, unit: WeightUnit = 'kg', includeUnit = true): string | null => {
+  if (!weight) return null
+
   const inKg = round(weight, 1).toFixed(1)
   const inLbs = round(weight * LBS_TO_KG_RATIO, 1).toFixed(1)
   const inKgWithUnits = inKg + (includeUnit ? ' kg' : '')

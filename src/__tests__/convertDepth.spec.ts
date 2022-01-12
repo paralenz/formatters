@@ -10,7 +10,7 @@ describe('convertDepth', () => {
   })
 
   it('should have ONE decimal', () => {
-    const [, decimal] = convertDepth(42, 'ft')
+    const [, decimal] = convertDepth(42, 'ft').split('.')
     expect(decimal.length).toEqual(1)
   })
 })
