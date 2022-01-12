@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+      // "target": "ESNext",
+      "module": "ES2020",
+      "declaration": true,
+      "outDir": "./dist",
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "noEmit": false,
+      "downlevelIteration": true,
+      "experimentalDecorators": true,
+      "resolveJsonModule": true,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "sourceRoot": "./src/",
+      "inlineSourceMap": true,
+      "lib": [
+          "esnext",
+          "ES2021"
+      ],
+      "moduleResolution": "node",
+  },
+  "include": [
+      "index.ts",
+      "src/*.ts",
+      ".eslintrc.js",
+  ],
+  "exclude": [
+      "node_modules/**",
+      "dist"
+  ]
+}
+
+
+  
+  
