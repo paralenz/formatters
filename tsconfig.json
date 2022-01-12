@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
-      // "target": "ESNext",
-      "module": "ES2020",
+    "module": "CommonJS",
       "declaration": true,
       "outDir": "./dist",
       "allowSyntheticDefaultImports": true,
@@ -12,7 +11,7 @@
       "resolveJsonModule": true,
       "removeComments": true,
       "preserveConstEnums": true,
-      "sourceRoot": "./src/",
+    "rootDir": "./src/",
       "inlineSourceMap": true,
       "lib": [
           "esnext",
@@ -20,8 +19,7 @@
       ],
       "moduleResolution": "node",
   },
-  "include": [
-      "index.ts",
+"include": [
       "src/*.ts",
       ".eslintrc.js",
   ],

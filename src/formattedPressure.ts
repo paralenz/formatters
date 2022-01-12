@@ -1,6 +1,6 @@
 import round from 'lodash.round'
 import { BAR_TO_PSI_RATIO } from './constants'
-import { PressureUnit } from '..'
+import { PressureUnit } from '.'
 
 /**
  * Format the pressure of a session to either bar or psi.

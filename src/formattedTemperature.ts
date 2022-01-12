@@ -1,5 +1,5 @@
 import round from 'lodash.round'
-import { TemperatureUnit } from '..'
+import { TemperatureUnit } from '.'
 import { KELVIN } from './constants'
 
 /**
