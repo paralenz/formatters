@@ -1,3 +1,6 @@
 src
 coverage
 .github
+.eslintrc
+jest.config.ts
+tsconfig
