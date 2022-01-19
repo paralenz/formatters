@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`constants should match snpashot 1`] = `
+Object {
+  "BAR_TO_PSI_RATIO": 14.5037738,
+  "KELVIN": 273.15,
+  "LBS_TO_KG_RATIO": 2.20462262185,
+  "METERS_TO_FEET_RATIO": 3.28084,
+  "ONE_KILOBYTE": 1024,
+  "PRESSURE": Object {
+    "bar": 1,
+    "psi": 0.0689475729,
+  },
+}
+`;
