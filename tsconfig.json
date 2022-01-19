@@ -1,34 +1,30 @@
 {
   "compilerOptions": {
     "module": "CommonJS",
-      "declaration": true,
-      "outDir": "./dist",
-      "allowSyntheticDefaultImports": true,
-      "esModuleInterop": true,
-      "noEmit": false,
-      "downlevelIteration": true,
-      "experimentalDecorators": true,
-      "resolveJsonModule": true,
-      "removeComments": true,
-      "preserveConstEnums": true,
+    "declaration": true,
+    "outDir": "./dist",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "noEmit": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
     "rootDir": "./src/",
-      "inlineSourceMap": true,
-      "lib": [
-          "esnext",
-          "ES2021"
-      ],
-      "moduleResolution": "node",
+    "inlineSourceMap": true,
+    "lib": [
+      "esnext",
+      "ES2021"
+    ],
+    "moduleResolution": "node",
   },
-"include": [
-      "src/*.ts",
-      ".eslintrc.js",
+  "include": [
+    "src/*.ts",
+    ".eslintrc.js",
   ],
   "exclude": [
-      "node_modules/**",
-      "dist"
+    "node_modules/**",
+    "dist"
   ]
 }
-
-
-  
-  
