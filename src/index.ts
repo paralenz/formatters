@@ -11,5 +11,6 @@ export { formattedWeight } from './formattedWeight'
 export { numberToHumanSize } from './numberToHumanSize'
 export { durationToHumanSize } from './durationToHumanSize'
 export { durationToClockFormat } from './durationToClockFormat'
+export { formatDate } from './formatDate'
 
 export * from './constants'
