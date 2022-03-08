@@ -18,3 +18,4 @@ jobs:
       - run: yarn test
       - run: yarn build
       - run: yarn publish --access public
+      - uses: paralenz/actions/make-release@v.1.2.1
