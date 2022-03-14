@@ -8,8 +8,8 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "lint": "eslint --ext .ts",
-    "build": "tsc --esModuleInterop -p tsconfig.build.json",
+    "build": "tsc",
+    "lint": "eslint",
     "test": "jest"
   },
   "devDependencies": {
