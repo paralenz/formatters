@@ -1,23 +1,22 @@
 {
-    "compilerOptions": {
-    "jsx": "react",
-    "target": "ES6",
-    "module": "commonjs",
-    "moduleResolution": "Node",
-    "outDir": "dist",
-    "rootDir": "src",
-    "declaration": true,
-    "esModuleInterop": true,
-    "strict": true,
-    "skipLibCheck": true,
-    "strictNullChecks": true,
-    "noImplicitAny": true,
-    },
-    "include": [
-        "src/**/*"
-    ],
-    "exclude": [
-        "**/*.spec.*",
-        "**/*.test.*"
-    ]
+  "compilerOptions": {
+  "target": "ES6",
+  "module": "commonjs",
+  "moduleResolution": "Node",
+  "outDir": "dist",
+  "rootDir": "src",
+  "declaration": true,
+  "esModuleInterop": true,
+  "strict": true,
+  "skipLibCheck": true,
+  "strictNullChecks": true,
+  "noImplicitAny": true,
+},
+"include": [
+  "src/**/*"
+],
+"exclude": [
+  "**/*.spec.*",
+  "**/*.test.*"
+]
 }
