@@ -1,6 +1,10 @@
 src
 coverage
 .github
+.vscode
+*.config.js
 .eslintrc
-jest.config.ts
-tsconfig
+.eslintignore
+tsconfig.json
+tsconfig.build.json
+.env*

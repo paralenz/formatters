@@ -1,6 +1,6 @@
 {
   "name": "@paralenz/formatters",
-  "version": "0.2.3",
+  "version": "0.2.2",
   "description": "A collection of number formatters used by the paralenz development team",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
