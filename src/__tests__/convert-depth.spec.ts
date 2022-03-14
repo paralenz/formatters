@@ -1,4 +1,4 @@
-import { convertDepth } from '../convertDepth'
+import { convertDepth } from '../convert-depth'
 
 describe('convertDepth', () => {
   it('should convert to meter', () => {
