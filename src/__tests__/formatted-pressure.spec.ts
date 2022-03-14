@@ -1,5 +1,5 @@
 import { BAR_TO_PSI_RATIO } from '../constants'
-import { formattedPressure } from '../formattedPressure'
+import { formattedPressure } from '../formatted-pressure'
 
 describe('formattedPressure', () => {
   it('should return pressure in bar', () => {

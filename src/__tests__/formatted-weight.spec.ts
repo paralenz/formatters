@@ -1,4 +1,4 @@
-import { formattedWeight } from '../formattedWeight'
+import { formattedWeight } from '../formatted-weight'
 
 describe('formattedWeight', () => {
   describe('unit', () => {

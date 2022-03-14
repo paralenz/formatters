@@ -1,4 +1,4 @@
-import { formattedDepth } from '../formattedDepth'
+import { formattedDepth } from '../formatted-depth'
 
 describe('formattedDepth', () => {
   it('should set correct unit (m)', () => {

@@ -1,5 +1,5 @@
 import { KELVIN } from '../constants'
-import { formattedTemperature } from '../formattedTemperature'
+import { formattedTemperature } from '../formatted-temperature'
 
 describe('formattedTemperature', () => {
   it('should have add celcius unit', () => {
