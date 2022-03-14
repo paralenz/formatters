@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: paralenz/actions/setup-node@master
+      - uses: paralenz/actions/setup-node@v1.2.1
         with:
           node-version: '14'
           token: ${{ secrets.NPM_AUTH_TOKEN }}
@@ -16,6 +16,6 @@ jobs:
       - run: yarn lint
       - run: yarn test
       - run: yarn build
-      - name: Tag and Release
-        uses: paralenz/actions/make-release@v1.2.3
       - run: yarn publish --access public
+      - name: Tag and Release
+        uses: paralenz/actions/make-release@v1.2.1
