@@ -12,5 +12,6 @@ export { numberToHumanSize } from './number-to-human-size'
 export { durationToHumanSize } from './duration-to-human-size'
 export { durationToClockFormat } from './duration-to-clock-format'
 export { formatDate } from './format-date'
+export { formattedName } from './formatted-name'
 
 export * from './constants'
