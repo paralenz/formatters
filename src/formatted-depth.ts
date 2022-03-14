@@ -1,5 +1,5 @@
 import { DistanceUnit } from '.'
-import { convertDepth } from './convertDepth'
+import { convertDepth } from './convert-depth'
 
 /**
  * Format the depth of a session. This will append the unit
