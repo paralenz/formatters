@@ -1,6 +1,6 @@
 {
   "name": "@paralenz/formatters",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A collection of number formatters used by the paralenz development team",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,7 +13,7 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@paralenz/eslint-config-typescript-react": "^1.0.4",
+    "@paralenz/eslint-config-typescript-react": "^1.0.7",
     "@types/jest": "^27.4.1",
     "@types/lodash.round": "^4.0.6",
     "jest": "^27.5.1",

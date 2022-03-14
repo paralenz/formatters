@@ -3,22 +3,27 @@ on:
   push:
     branches:
       - master
+
 jobs:
-  main:
+  setup:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: paralenz/actions/setup-node@master
+      - uses: paralenz/actions/setup-node@v1.2.3
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
         with:
-          node-version: '14'
           token: ${{ secrets.NPM_AUTH_TOKEN }}
-          registry-url: https://npm.pkg.github.com/
-      - name: Lint
+      - name: Run linting
         run: yarn lint
-      - name: Test
-        run: yarn test
-      - name: Build
-        run: yarn build
+      - run: yarn build
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v8
+        with:
+          default_author: github_actions
+          add: .
+          message: 🏷️ Generate typings
       - name: Tag and Release
         uses: paralenz/actions/make-release@v1.2.3
-      - run: yarn publish --access public
+      - name: Publish package
+        run: npm publish --access public
