@@ -8,7 +8,7 @@ import { WeightUnit } from '.'
  * @param {WeightUnit} unit The unit that the pressure should be converted to. Default: kg
  * @param {boolean} includeUnit Should the unit be appended. Default: true
  */
-export const formattedWeight = (weight: number, unit: WeightUnit = 'kg', includeUnit = true): string | null => {
+export const formattedWeight = (weight: number | null, unit: WeightUnit = 'kg', includeUnit = true): string | null => {
   if (!weight) return null
 
   const inKg = parseFloat(`${weight}`).toFixed(1)
