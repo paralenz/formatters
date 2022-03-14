@@ -12,17 +12,17 @@ describe('formattedWeight', () => {
 
   describe('includeUnit', () => {
     it('should contain unit', () => {
-      expect(formattedWeight(100, 'kg', true).endsWith('kg')).toEqual(true)
+      expect(formattedWeight(100, 'kg', true)?.endsWith('kg')).toEqual(true)
     })
     it('should NOT contain unit', () => {
-      expect(formattedWeight(100, 'kg', false).endsWith('kg')).toEqual(false)
+      expect(formattedWeight(100, 'kg', false)?.endsWith('kg')).toEqual(false)
     })
   })
 
   it('should return correct value (kg)', () => {
-    expect(formattedWeight(100, 'kg').endsWith('kg')).toEqual(true)
+    expect(formattedWeight(100, 'kg')?.endsWith('kg')).toEqual(true)
   })
   it('should return correct value (lbs)', () => {
-    expect(formattedWeight(100, 'lbs').endsWith('lbs')).toEqual(true)
+    expect(formattedWeight(100, 'lbs')?.endsWith('lbs')).toEqual(true)
   })
 })
