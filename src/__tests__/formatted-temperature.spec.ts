@@ -11,7 +11,7 @@ describe('formattedTemperature', () => {
   })
 
   it('should have ONE decimal', () => {
-    const [, decimal] = formattedTemperature(KELVIN, 'C').split('.')
+    const [, decimal] = formattedTemperature(KELVIN, 'C')?.split('.') || []
     expect(decimal.replace(/\D/g, '').length).toEqual(1)
   })
 
