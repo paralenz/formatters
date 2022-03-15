@@ -4,7 +4,7 @@ type User = {
   readonly lastName?: string | null
 }
 
-export const formattedName = (user: User) => {
+export const formattedName = (user: Partial<User> | null | undefined) => {
   if (!user) return null
 
   return [
