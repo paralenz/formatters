@@ -1,6 +1,6 @@
 import { ONE_KILOBYTE } from '.'
 
-export const numberToHumanSize = (size: number): string | null => {
+export const numberToHumanSize = (size: number | null): string | null => {
   if (!size) return null
 
   if (size < ONE_KILOBYTE) return size + ' bytes'

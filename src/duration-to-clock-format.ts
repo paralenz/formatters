@@ -1,4 +1,4 @@
-export const durationToClockFormat = (duration: number): string | null | void => {
+export const durationToClockFormat = (duration: number | null): string | null | void => {
   if (!duration) return null
 
   const h = Math.floor(duration / 3600)
