@@ -2,8 +2,9 @@ import { ConvertFileSize } from '../convert-file-size'
 
 describe('ConvertFileSize', () => {
   it('bytes->bytes', () => {
-    expect(new ConvertFileSize().from('bytes').to('bytes').convert(1)).toEqual(1)
+    expect(new ConvertFileSize().from('B').to('B').convert(1)).toEqual(1)
   });
+  
   it('KB->KB', () => {
     expect(new ConvertFileSize().from('KB').to('KB').convert(1)).toEqual(1)
   });
