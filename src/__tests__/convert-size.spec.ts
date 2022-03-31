@@ -22,7 +22,7 @@ describe('ConvertFileSize', () => {
   });
   
   it('KB->bytes', () => {
-    expect(new ConvertFileSize().from('KB').to('bytes').convert(1)).toEqual(1000)
+    expect(new ConvertFileSize().from('KB').to('B').convert(1)).toEqual(1000)
   });
   
   it('MB->KB', () => {
