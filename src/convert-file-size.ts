@@ -1,21 +1,20 @@
-import { ONE_KILOBYTE } from '.'
+import { ONE_KILOBYTE } from './constants'
+import { FileSizeUnit } from './types'
 
-type Unit = 'GB' | 'MB' | 'KB' | 'B' | 'TB'
-
-export class ConvertFileSize {
-  private fromUnit: Unit = 'B'
-  private toUnit: Unit = 'B'
-  private readonly units: Unit[] = ['B', 'KB', 'MB', 'GB', 'TB']
+class ConvertFileSize {
+  private fromUnit: FileSizeUnit = 'B'
+  private toUnit: FileSizeUnit = 'B'
+  private readonly units: FileSizeUnit[] = ['B', 'KB', 'MB', 'GB', 'TB']
   private postUnit = false
   private postDecimals = 0
 
-  from (unit: Unit): this {
+  from (unit: FileSizeUnit): this {
     this.fromUnit = unit
 
     return this
   }
 
-  to (unit: Unit): this {
+  to (unit: FileSizeUnit): this {
     this.toUnit = unit
 
     return this
@@ -51,3 +50,5 @@ export class ConvertFileSize {
       : `${result.toFixed(this.postDecimals)}`
   }
 }
+
+export const convertFileSize = new ConvertFileSize()
