@@ -10,7 +10,7 @@ describe('ConvertFileSize', () => {
   });
   
   it('byte->KB', () => {
-    expect(new ConvertFileSize().from('bytes').to('KB').convert(1000)).toEqual(1)
+    expect(new ConvertFileSize().from('B').to('KB').convert(1000)).toEqual(1)
   });
   
   it('KB->MB', () => {
