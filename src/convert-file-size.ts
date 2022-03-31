@@ -1,9 +1,10 @@
-type Unit = 'GB' | 'MB' | 'KB' | 'bytes'| 'TB'
+type Unit = 'GB' | 'MB' | 'KB' | 'B' | 'TB'
 
 export class ConvertFileSize {
-  private fromUnit: Unit = 'bytes'
-  private toUnit: Unit = 'bytes'
-  private readonly units: Unit[] = ['bytes', 'KB', 'MB', 'GB']
+  private fromUnit: Unit = 'B'
+  private toUnit: Unit = 'B'
+  private readonly units: Unit[] = ['B', 'KB', 'MB', 'GB', 'TB']
+  private readonly baseSize = 1000
 
   from (unit: Unit): this {
     this.fromUnit = unit
