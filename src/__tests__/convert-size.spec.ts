@@ -39,10 +39,6 @@ describe('ConvertFileSize', () => {
   });
   
   it('GB->byte', () => {
-    expect(new ConvertFileSize().from('GB').to('bytes').convert(1)).toEqual(1e+9)
+    expect(new ConvertFileSize().from('GB').to('B').convert(1)).toEqual(1e+9)
   });
-  
-  
-
-  
 })
