@@ -17,21 +17,19 @@ export class ConvertFileSize {
     return this
   }
 
-  toGb () { return this.to('GB') }
-  toMm () { return this.to('MB') }
-  toKk () { return this.to('KB') }
-  toBytes () { return this.to('bytes') }
-  fromGb () { return this.from('GB') }
-  fromMb () { return this.from('MB') }
-  fromKb () { return this.from('KB') }
-  fromBytes () { return this.from('bytes') }
-
   convert (size: number) {
-    const fromIndex = this.units.indexOf(this.fromUnit)
-    const toIndex = this.units.indexOf(this.toUnit)
+    const fromUnit = this.units.indexOf(this.fromUnit)
+    const toUnit = this.units.indexOf(this.toUnit)
+    let result: number | string = 0
 
-    if (fromIndex === toIndex) {
-      return size
+    if (fromUnit < 0 || toUnit < 0) throw new Error('Error: Incorrect units')
+    if (fromUnit === toUnit) return size
+
+    result = fromUnit < toUnit
+      ? size / (Math.pow(this.baseSize, (toUnit - fromUnit)))
+      : size * (Math.pow(this.baseSize, (fromUnit - toUnit)))
+
+    return result
     }
   }
 }
