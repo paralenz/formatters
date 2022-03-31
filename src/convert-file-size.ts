@@ -50,5 +50,3 @@ export class ConvertFileSize {
       : `${result.toFixed(this.postDecimals)}`
   }
 }
-
-export const convertFileSize = new ConvertFileSize()
