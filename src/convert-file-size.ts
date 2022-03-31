@@ -1,7 +1,7 @@
 import { ONE_KILOBYTE } from './constants'
 import { FileSizeUnit } from './types'
 
-class ConvertFileSize {
+export class ConvertFileSize {
   private fromUnit: FileSizeUnit = 'B'
   private toUnit: FileSizeUnit = 'B'
   private readonly units: FileSizeUnit[] = ['B', 'KB', 'MB', 'GB', 'TB']
@@ -30,8 +30,8 @@ class ConvertFileSize {
     return this
   }
 
-  convert (size: number): string {
-    const fromUnit = this.units.indexOf(this.fromUnit)
+  convert (size: number, from = this.fromUnit): string {
+    const fromUnit = this.units.indexOf(from)
     const toUnit = this.units.indexOf(this.toUnit)
     let result: number | string = 0
 
