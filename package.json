@@ -1,7 +1,7 @@
 {
   "name": "@paralenz/formatters",
-  "version": "0.3.0",
-  "description": "A collection of number formatters used by the paralenz development team",
+  "version": "1.0.0",
+  "description": "A collection of number formatters used widely by the Paralenz development team",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "Casten Daurehøj",
@@ -11,7 +11,7 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@paralenz/eslint-config-typescript-react": "^1.0.7",
+    "@paralenz/eslint-config-typescript-react": "^1.1.0",
     "@types/jest": "^27.4.1",
     "@types/lodash.round": "^4.0.6",
     "jest": "^27.5.1",
@@ -23,8 +23,7 @@
     "lodash.round": "^4.0.4"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com",
-    "access": "public"
+    "registry": "https://npm.pkg.github.com"
   },
   "homepage": "https://github.com/paralenz/formatters",
   "repository": {
