@@ -1,4 +1,4 @@
-import { ONE_KILOBYTE } from '.'
+import { ONE_KILOBYTE } from './constants'
 
 export const numberToHumanSize = (size: number | null): string | null => {
   if (!size) return null

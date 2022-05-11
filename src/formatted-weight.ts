@@ -1,13 +1,6 @@
 import { LBS_TO_KG_RATIO } from './constants'
-import { WeightUnit } from '.'
+import { WeightUnit } from './types'
 
-/**
- * Format the weight of a session
- *
- * @param weight The dive weight
- * @param {WeightUnit} unit The unit that the pressure should be converted to. Default: kg
- * @param {boolean} includeUnit Should the unit be appended. Default: true
- */
 export const formattedWeight = (weight: number, unit: WeightUnit = 'kg', includeUnit = true): string | null => {
   if (!weight) return null
 
