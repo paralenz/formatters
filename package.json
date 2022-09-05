@@ -12,9 +12,9 @@
   },
   "devDependencies": {
     "@paralenz/eslint-config-typescript-react": "^1.2.3",
-    "@types/jest": "^27.4.1",
+    "@types/jest": "^29.0.0",
     "@types/lodash.round": "^4.0.7",
-    "jest": "^27.5.1",
+    "jest": "^29.0.2",
     "ts-jest": "^28.0.8",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.2"
