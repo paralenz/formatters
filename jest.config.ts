@@ -9,7 +9,11 @@ const config: Config.InitialOptions = {
   testRegex: '(/__tests__/.*|\\.(test|spec))\\.(ts)$',
   testPathIgnorePatterns: [
     'dist'
-  ]
+  ],
+  snapshotFormat: {
+    printBasicPrototype: true,
+    escapeString: true
+  }
 };
 
 export default config;
